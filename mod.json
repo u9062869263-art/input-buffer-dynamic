@@ -1,0 +1,68 @@
+{
+	"geode": "5.0.0",
+	"gd": {
+		"win": "2.2081"
+	},
+	"version": "v1.0.0",
+	"id": "yourname.input-buffer-dynamic",
+	"name": "Input Buffer Dynamic",
+	"developer": "YourName",
+	"description": "Input buffering and tap shaping for every gamemode. Press Tab to open the settings.",
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"default": true
+		},
+		"jump-buffer-ms": {
+			"type": "float",
+			"name": "Cube / Ball / Robot / Spider buffer (ms)",
+			"description": "Keeps your input held this long after you let go, so a landing or orb touch inside this window still fires the action.",
+			"default": 8.0,
+			"min": 0.0,
+			"max": 60.0,
+			"control": { "slider": true }
+		},
+		"hold-min-ms": {
+			"type": "float",
+			"name": "Ship / UFO / Swing min hold (ms)",
+			"description": "Stretches taps shorter than this so they still register.",
+			"default": 6.0,
+			"min": 0.0,
+			"max": 40.0,
+			"control": { "slider": true }
+		},
+		"wave-min-hold-ms": {
+			"type": "float",
+			"name": "Wave min hold (ms)",
+			"description": "Minimum time a wave input stays held.",
+			"default": 6.0,
+			"min": 0.0,
+			"max": 40.0,
+			"control": { "slider": true }
+		},
+		"wave-min-gap-ms": {
+			"type": "float",
+			"name": "Wave min gap (ms)",
+			"description": "Minimum time between a wave release and the next press.",
+			"default": 6.0,
+			"min": 0.0,
+			"max": 40.0,
+			"control": { "slider": true }
+		},
+		"grid-snap": {
+			"type": "bool",
+			"name": "Grid snap",
+			"description": "Rounds all delays up to whole physics ticks.",
+			"default": false
+		},
+		"grid-tps": {
+			"type": "int",
+			"name": "Grid TPS",
+			"description": "Tick rate used by grid snap.",
+			"default": 240,
+			"min": 60,
+			"max": 2000
+		}
+	}
+}
