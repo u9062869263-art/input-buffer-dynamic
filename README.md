@@ -11,7 +11,7 @@ if your geode version is Newer wait for the next Release.
 - Geode 5.11.2
 
 ## How to install
-1. Download **V5.11.2.input-buffer-dynamic.geode** from the Assets section below.
+1. Download **V5.11.2.input-buffer-dynamic.geode** from Releases (it should be the first to pop up).
 2. Open Steam, Open **Geometry Dash**.
 3. Click on the **geode** Icon down below, then go to **settings for geode (The Gear Icon)** .
 4. Click install from file.
